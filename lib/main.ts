@@ -1,1 +1,1 @@
-export { CardComponent } from "./Card/CardComponent"
+export { default as Typography, Text, Title } from '@lib/Typography';

@@ -18,8 +18,35 @@
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+
+    /* Path mapping */
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"],
+      "@lib/*": ["./lib/*"],
+      "@types/*": ["./types/*"],
+      "@utils/*": ["./utils/*"]
+    },
+
+    /* Library specific */
+    "declaration": true,
+    "declarationMap": true,
+    "outDir": "./dist"
   },
-  "include": ["src"],
+  "include": [
+    "src/**/*",
+    "lib/**/*", 
+    "types/**/*",
+    "utils/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "**/*.test.ts",
+    "**/*.test.tsx",
+    "**/*.stories.ts",
+    "**/*.stories.tsx"
+  ],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
