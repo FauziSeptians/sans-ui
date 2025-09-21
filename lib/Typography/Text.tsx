@@ -36,6 +36,7 @@ export default function Text(props: ExtendedTextTypes) {
       restProps?.italic && STATUS.ITALIC,
       restProps?.underline && STATUS.UNDERLINE,
       getTypeClass(restProps?.type),
+      "text-sm",
       restProps?.className
    );
 

@@ -23,9 +23,11 @@
     "@types/node": "^24.5.2",
     "belajaruploadcomponent": "^0.0.0",
     "framer-motion": "^11.0.24",
+    "lucide-react": "^0.544.0",
     "path": "^0.12.7",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "vite-plugin-dts": "^4.5.4",
     "vite-tsconfig-paths": "^4.3.2",
     "zsans-ui": "^0.0.1"
   },
