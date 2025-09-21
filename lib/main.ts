@@ -1,4 +1,4 @@
-export { default as Typography, Text, Title } from '@lib/Typography';
+export { default as Typography, Title } from '@lib/Typography';
 export { default as Layout, Sidebar } from "@lib/Layout"
-// export { CardComponent } from "@lib/Card"
+export { Text } from "@lib/Typography"
 export { CardComponent } from "./Card"

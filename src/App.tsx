@@ -1,13 +1,11 @@
-import { CardComponent, Text, Title, Typography } from "@lib/main";
+
+import { CardComponent, Text } from "@lib/main";
 import "./App.css";
 import "./index.css";
 import { Sidebar } from "@lib/Layout";
 import {
    FolderGit2,
-   FolderOpenDot,
-   FolderRoot,
    House,
-   MousePointer2,
    User,
 } from "lucide-react";
 
@@ -66,15 +64,8 @@ function App() {
          }
       >
          <div className="bg-red-200 w-full h-screen text-center flex justify-center items-center">
-            <CardComponent/>
-            <Typography.Text underline type="danger">
-               adwawadawawdww
-            </Typography.Text>
-            <Title size="large">Hallo</Title>
-            <Text bold type="success">
-               wakwawww
-            </Text>
-            <Text highlightText="ning">Warning</Text>
+            <CardComponent />
+            <Text>awdwad</Text>
          </div>
       </Sidebar>
    );
