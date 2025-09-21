@@ -10,7 +10,8 @@ export default defineConfig({
     tsconfigPaths(),
     dts({
       insertTypesEntry: true,
-      exclude: ['**/*.test.ts', '**/*.test.tsx', '**/*.stories.ts', '**/*.stories.tsx']
+      exclude: ['**/*.test.ts', '**/*.test.tsx', '**/*.stories.ts', '**/*.stories.tsx'],
+      outDir: 'dist'
     })
   ],
   resolve: {
@@ -25,8 +26,25 @@ export default defineConfig({
     lib: {
       entry: resolve(__dirname, 'lib/main.ts'),
       name: 'zisanss-ui',
-      fileName: 'zisanss-ui',
+      fileName: (format) => `zisanss-ui.${format}.js`,
+      formats: ['es', 'cjs', 'umd']
     },
+    rollupOptions: {
+      external: [
+        'react', 
+        'react-dom', 
+        'react/jsx-runtime',
+        'react/jsx-dev-runtime'
+      ],
+      output: {
+        globals: {
+          'react': 'React',
+          'react-dom': 'ReactDOM',
+          'react/jsx-runtime': 'jsxRuntime'
+        }
+      }
+    },
+    copyPublicDir: false,
+    sourcemap: true
   }
 });
-
