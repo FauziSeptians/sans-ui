@@ -1,4 +1,4 @@
-import { Text, Title, Typography } from "@lib/main";
+import { CardComponent, Text, Title, Typography } from "@lib/main";
 import "./App.css";
 import "./index.css";
 import { Sidebar } from "@lib/Layout";
@@ -66,6 +66,7 @@ function App() {
          }
       >
          <div className="bg-red-200 w-full h-screen text-center flex justify-center items-center">
+            <CardComponent/>
             <Typography.Text underline type="danger">
                adwawadawawdww
             </Typography.Text>
